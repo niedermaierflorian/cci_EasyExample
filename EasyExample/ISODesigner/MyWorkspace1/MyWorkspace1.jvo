@@ -13,8 +13,8 @@ ptn_Child1=ViewFrame-0
 DocPathName=.\MyProject1\DataMask_Home.jvi
 WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPDAAAAAAAOBAAAAAACOCAAAAAPJCAAAAA
 ActiveTab=0
-ViewScrollHoriz=79
-ViewScrollVert=0
+ViewScrollHoriz=108
+ViewScrollVert=1
 IsActiveChildFrame=False
 [5_5_0.ChildFrames.Document-1]
 ptn_Child1=ViewFrame-0
@@ -22,6 +22,15 @@ ptn_Child1=ViewFrame-0
 DocPathName=.\MyProject1\Seite 2.jvi
 WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPDAAAAAAAOBAAAAAACOCAAAAAPJCAAAAA
 ActiveTab=0
-ViewScrollHoriz=79
-ViewScrollVert=0
+ViewScrollHoriz=108
+ViewScrollVert=1
 IsActiveChildFrame=False
+[5_5_0.ChildFrames.Document-3]
+ptn_Child1=ViewFrame-0
+[5_5_0.ChildFrames.Document-3.ViewFrame-0]
+DocPathName=.\MyProject1\DataMask_Seite3.jvi
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPDAAAAAAAOBAAAAAACOCAAAAAPJCAAAAA
+ActiveTab=0
+ViewScrollHoriz=108
+ViewScrollVert=1
+IsActiveChildFrame=True
