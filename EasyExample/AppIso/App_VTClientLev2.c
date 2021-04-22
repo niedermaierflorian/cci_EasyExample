@@ -123,13 +123,6 @@ void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pBut
 		break;
 
 
-
-
-
-
-
-
-
 	case SoftKey_Reset_Gesamtzaehler:
 	case Button_Reset_Gesamtzaehler:
 		Gesamtzaehler = 0;
@@ -143,6 +136,31 @@ void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pBut
 	default:
 		break;
 	}
+
+
+
+	if(Tageszaehler>=Tagesziel)
+		IsoVtcCmd_ObjHideShow(pButtonData->u8Instance, Container_Ziel_erreicht_Tag, true);
+	else
+		IsoVtcCmd_ObjHideShow(pButtonData->u8Instance, Container_Ziel_erreicht_Tag, false);
+
+	if(Gesamtzaehler>=Gesamtziel)
+		IsoVtcCmd_ObjHideShow(pButtonData->u8Instance, Container_Ziel_erreicht_Gesamt, true);
+	else
+		IsoVtcCmd_ObjHideShow(pButtonData->u8Instance, Container_Ziel_erreicht_Gesamt, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
 	// Senden des Wertes der lokalen Variable Tageszaehler an die NumberVariable_Tageszaehler
 	IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Tageszaehler, Tageszaehler);
 	// Senden des Wertes der lokalen Variable Gesamtzaehler an die NumberVariable_Gesamtzaehler
