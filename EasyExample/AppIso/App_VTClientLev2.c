@@ -198,6 +198,19 @@ void VTC_handleNumericValues(const struct InputNumber_S * pInputNumberData) {
 	default:
 		break;
 	}
+
+	if(Tageszaehler>=Tagesziel)
+		IsoVtcCmd_ObjHideShow(pInputNumberData->u8Instance, Container_Ziel_erreicht_Tag, true);
+	else
+		IsoVtcCmd_ObjHideShow(pInputNumberData->u8Instance, Container_Ziel_erreicht_Tag, false);
+
+	if(Gesamtzaehler>=Gesamtziel)
+		IsoVtcCmd_ObjHideShow(pInputNumberData->u8Instance, Container_Ziel_erreicht_Gesamt, true);
+	else
+		IsoVtcCmd_ObjHideShow(pInputNumberData->u8Instance, Container_Ziel_erreicht_Gesamt, false);
+
+
+
 }
 
 
