@@ -28,5 +28,8 @@
 				<Object Class="CFontStyle" JVS-ID="23001" ObjectName="FontAttributes_Default"/>
 			</Objects>
 		</Object>
+		<Object Class="GraphicObject">
+			<Objects/>
+		</Object>
 	</Objects>
 </JetViewSoft-DefaultObjects>
